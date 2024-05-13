@@ -1,0 +1,65 @@
+$menumg : 1rem;     // scss 변수 - 공통으로 들어가는 속성에 사용
+
+#hd{
+    border-bottom: 1px solid #ddd;
+    background-color: bisque;
+    .container-1824{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        h1{
+            margin: 0;
+            a{
+                img{
+
+                }
+            }
+        }
+        .gnb{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            li{ 
+                display: inline-block; 
+                margin-right: 1.5rem;
+                margin-left: 1.5rem;
+                a{
+                    font-family: "Roboto Condensed";
+                    text-decoration: none;
+                    font-size: 1.0625rem;
+                    font-weight: 700;
+                    color: #fff;
+                }
+            }
+        }
+        .iconMenu{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            li{
+                svg{
+                    margin-left: 1.56rem;
+                    path{
+                        
+                    }
+                }
+                span{
+                    // 접근성 지켜서 안보이게 밖으로 내보내기
+                    // position: absolute; 
+                    // width: 0;
+                    // height: 0;
+                    // display: block;
+                    // overflow: hidden;
+                    // opacity: 0;
+                    font-family: "Noto Sans KR";
+                    text-decoration: none;
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
