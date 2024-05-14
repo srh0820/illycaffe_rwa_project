@@ -1,5 +1,7 @@
 body * {
   font-family: "Roboto Condensed", "Noto Sans KR", sans-serif;
+  color: #333;
+  text-decoration: none;
 }
 
 .container-1400 {
@@ -10,12 +12,4 @@ body * {
 .container-1824 {
   max-width: 1824px;
   margin: 0 auto;
-}
-
-.sr_only {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
 }

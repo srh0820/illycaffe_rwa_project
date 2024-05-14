@@ -1,46 +1,56 @@
 #hd {
-  border-bottom: 1px solid #ddd;
-  background-color: bisque;
-}
-#hd .container-1824 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-}
-#hd .container-1824 h1 {
-  margin: 0;
-}
-#hd .container-1824 .gnb {
-  padding: 0;
-  margin: 0;
-  display: flex;
+  background-color: #c7c1c1;
 }
 #hd .container-1824 .gnb li {
   display: inline-block;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
 }
 #hd .container-1824 .gnb li a {
   font-family: "Roboto Condensed";
-  text-decoration: none;
   font-size: 1.0625rem;
   font-weight: 700;
   color: #fff;
 }
 #hd .container-1824 .iconMenu {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
+  width: 0;
 }
 #hd .container-1824 .iconMenu li svg {
   margin-left: 1.56rem;
 }
+#hd .container-1824 .iconMenu li svg:hover path {
+  fill: #D9261C;
+}
 #hd .container-1824 .iconMenu li span {
   font-family: "Noto Sans KR";
-  text-decoration: none;
   font-size: 0.875rem;
   font-weight: 700;
+  color: #fff;
+}
+
+#ft {
+  background-color: #D9261C;
+}
+#ft .container-1400 {
+  height: 520px;
+}
+#ft .container-1400 .gnb li {
+  display: inline-block;
+  border-bottom: 1px soild #c7c1c1;
+}
+#ft .container-1400 .gnb li a {
+  font-family: "Noto Sans KR";
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+#ft .container-1400 .ftText p {
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+#ft .container-1400 .ftText .ftTextIcon p {
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  font-weight: 400;
   color: #fff;
 }
