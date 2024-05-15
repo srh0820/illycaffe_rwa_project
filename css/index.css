@@ -1,5 +1,6 @@
-#hd {
-  background-color: #c7c1c1;
+#hd .container-1824 {
+  position: relative;
+  z-index: 2;
 }
 #hd .container-1824 .gnb li {
   display: inline-block;
@@ -13,9 +14,6 @@
 #hd .container-1824 .iconMenu {
   width: 0;
 }
-#hd .container-1824 .iconMenu li svg {
-  margin-left: 1.56rem;
-}
 #hd .container-1824 .iconMenu li svg:hover path {
   fill: #D9261C;
 }
@@ -24,6 +22,19 @@
   font-size: 0.875rem;
   font-weight: 700;
   color: #fff;
+}
+
+#main {
+  height: 100vh;
+}
+#main .mainImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 1;
 }
 
 #ft {
