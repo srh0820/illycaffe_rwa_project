@@ -53,6 +53,9 @@
   font-weight: 700;
   color: #fff;
 }
+#hd .container-1824 .iconMenu li span:hover {
+  color: #D9261C;
+}
 
 #main .mainImg {
   top: 0;
