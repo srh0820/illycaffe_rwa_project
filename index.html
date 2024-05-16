@@ -50,15 +50,56 @@
 <body>
     <header id="hd">
         <div class="container-1824 py-3 border-bottom d-flex justify-content-between align-items-center">
-            <h1 class="mb-0"><a href=""><img src="./img/Logo.jpg" alt="로고"></a></h1> <!-- 로고는 이미지로 -->
-            <!-- ul#gnb>li*6>a{대메뉴$} -->
+            <h1 class="mb-0"><a href="/" class="d-block"><img src="./img/Logo.jpg" alt="로고"></a></h1> <!-- 로고는 이미지로 -->
+
             <ul class="gnb ps-0 mb-0 d-flex">
-                <li class="mx-4"><a href="">BRAND</a></li>
-                <li class="mx-4"><a href="">ILLY CAFFE</a></li>
-                <li class="mx-4"><a href="">ILLY SHOP</a></li>
-                <li class="mx-4"><a href="">UDC</a></li>
-                <li class="mx-4"><a href="">BTB</a></li>
-                <li class="mx-4"><a href="">e-SHOP</a></li>
+                <li class="d1_li mx-4 position-relative">
+                    <a href="" class="gnb_d1_a">BRAND</a>
+                    <ul class="d2_ul position-absolute border px-3">
+                        <li><a href="">BRAND</a></li>
+                        <li><a href="">일리커피</a></li>
+                        <li><a href="">뉴스 & 공지</a></li>
+                    </ul>
+                </li>
+                <li class="d1_li mx-4 position-relative">
+                    <a href="" class="gnb_d1_a">ILLY CAFFE</a>
+                    <ul class="d2_ul position-absolute border">
+                        <li><a href="">ILLY CAFFE</a></li>
+                        <li><a href="">프랜차이즈</a></li>
+                        <li><a href="">매장찾기</a></li>
+                    </ul>
+                </li>
+                <li class="d1_li mx-4 position-relative">
+                    <a href="" class="gnb_d1_a">ILLY SHOP</a>
+                    <ul class="d2_ul position-absolute border">
+                        <li><a href="">ILLY SHOP</a></li>
+                        <li><a href="">매장찾기</a></li>
+                        <li><a href="">소메뉴3</a></li>
+                    </ul>
+                </li>
+                <li class="d1_li mx-4 position-relative">
+                    <a href="" class="gnb_d1_a">UDC</a>
+                    <ul class="d2_ul position-absolute border">
+                        <li><a href="">UDC & 교육철학</a></li>
+                        <li><a href="">교육내용</a></li>
+                    </ul>
+                </li>
+                <li class="d1_li mx-4  position-relative">
+                    <a href="" class="gnb_d1_a">BTB</a>
+                    <ul class="d2_ul position-absolute border">
+                        <li><a href="">BTB 사업</a></li>
+                        <li><a href="">공식대리점</a></li>
+                    </ul>
+                </li>
+                <li class="d1_li mx-4  position-relative">
+                    <a href="" class="gnb_d1_a">e-SHOP</a>
+                    <ul class="d2_ul position-absolute border">
+                        <li><a href="">커피제품</a></li>
+                        <li><a href="">캡슐머신</a></li>
+                        <li><a href="">일리아트컬랙션</a></li>
+                        <li><a href="">커피악세서리</a></li>
+                    </ul>
+                </li>
             </ul>
             <!-- ul.iconMenu>li>span^li*2>i+span -->
             <ul class="iconMenu ps-0 mb-0 d-flex justify-content-end">
@@ -76,6 +117,7 @@
                     <span class="visually-hidden">로그인</span>
                 </li>
             </ul>
+
         </div>
     </header>
 
