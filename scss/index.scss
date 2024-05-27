@@ -1,14 +1,13 @@
 #hd{
-    background: lightgray;
-    position: relative;
+    // position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
     .container-1824{
-        // height: 100px;
+        // height: 100px;.
         h1{
             a{
                 list-style: none;
-                img{
-
-                }
             }
         }
         .gnb{
@@ -26,6 +25,7 @@
             }
             &:hover{
                 &:before{
+                    content: "";
                     height: 180px;
                 }
                 .gnb__d1_li{
@@ -106,12 +106,21 @@
 }
 
 #main{
-    .mainImg{
-        top: 0;
-        left: 0;
+    position: fixed;
+    .mainBanner{
+        z-index: 10;
         width: 100%;
-        height: 100%;
-        background-size: cover;
+        height: 100%; /* 화면 전체 높이 */
+        background-position: center;
+        p{
+            position: fixed;
+            z-index: 1;
+            font-family: "Roboto Condensed";
+            font-size: 38px;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+        }
     }
 }
 

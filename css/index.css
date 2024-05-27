@@ -1,6 +1,8 @@
+@charset "UTF-8";
 #hd {
-  background: lightgray;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
 }
 #hd .container-1824 h1 a {
   list-style: none;
@@ -18,6 +20,7 @@
   background-color: #fff;
 }
 #hd .container-1824 .gnb:hover:before {
+  content: "";
   height: 180px;
 }
 #hd .container-1824 .gnb:hover .gnb__d1_li .d2_ul {
@@ -75,12 +78,23 @@
   color: #D9261C;
 }
 
-#main .mainImg {
-  top: 0;
-  left: 0;
+#main {
+  position: fixed;
+}
+#main .mainBanner {
+  z-index: 10;
   width: 100%;
-  height: 100%;
-  background-size: cover;
+  height: 100%; /* 화면 전체 높이 */
+  background-position: center;
+}
+#main .mainBanner p {
+  position: fixed;
+  z-index: 1;
+  font-family: "Roboto Condensed";
+  font-size: 38px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
 }
 
 #ft {
