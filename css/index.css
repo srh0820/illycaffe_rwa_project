@@ -14,7 +14,7 @@
   height: 0;
   width: 100%;
   transition: 0.5s;
-  background-color: #fff;
+  background-color: lightgray;
 }
 #hd .gnb:hover:before {
   height: 180px !important;
@@ -23,7 +23,7 @@
   font-family: "Roboto Condensed";
   font-size: 1.0625rem;
   font-weight: 700;
-  color: #fff;
+  color: #333333;
 }
 #hd .gnb .gnb_d1_li:hover ul {
   max-height: 180px;
@@ -50,7 +50,7 @@
   font-family: "Noto Sans KR";
   font-size: 1.0625rem;
   font-weight: 500;
-  color: #000;
+  color: #333333;
 }
 #hd .gnb .gnb_d1_li .d2_ul li:hover > a {
   color: #D9261C;
@@ -72,12 +72,10 @@
 }
 
 #main {
-  position: relative;
   width: 1920px;
   max-width: 100%;
-  display: inline-block;
 }
-#main .bgImg {
+#main .mainBanner .bgImg {
   position: relative;
   width: 100%;
   max-width: 1920px;
@@ -89,10 +87,10 @@
   background-position: center;
   background-size: cover;
 }
-#main .bgImg .mainTextbox {
+#main .mainBanner .bgImg .mainTextbox {
   position: relative;
 }
-#main .bgImg .mainTextbox .mainText1 {
+#main .mainBanner .bgImg .mainTextbox .mainText1 {
   position: absolute;
   top: 485px;
   left: 882px;
@@ -105,7 +103,7 @@
   line-height: 135%;
   letter-spacing: 5.7px;
 }
-#main .bgImg .mainTextbox .mainText2 {
+#main .mainBanner .bgImg .mainTextbox .mainText2 {
   position: absolute;
   top: 664px;
   left: 709px;
@@ -118,7 +116,7 @@
   line-height: 18px;
   letter-spacing: -0.9px;
 }
-#main .bgImg .mainTextbox .btn {
+#main .mainBanner .bgImg .mainTextbox .btn {
   position: absolute;
   top: 756px;
   left: 882px;
@@ -135,6 +133,56 @@
   align-items: center; /* 수직 가운데 정렬 */
   letter-spacing: -0.8px;
   line-height: 100%; /* 16px */
+}
+
+#product .productBox {
+  width: 384px;
+  height: 300px;
+  background-color: #121013;
+}
+#product .productBox .hoverBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+#product .productBox .hoverBox .textarea {
+  top: 99px;
+  left: 37px;
+  width: 193px;
+  position: relative;
+}
+#product .productBox .hoverBox .textarea .titletext {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: -1.2px;
+  line-height: 24px;
+}
+#product .productBox .hoverBox .textarea .subtext {
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: -0.96px;
+  line-height: 22.6px;
+}
+#product .productBox .hoverBox .imgarea {
+  position: absolute;
+  overflow: hidden;
+  bottom: -22%;
+  left: 282px;
+  width: 102px;
+  height: 225px;
+}
+#product .productBox .hoverBox .imgarea .coffeeimg {
+  width: 134px;
+  height: 225px;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #ft {
