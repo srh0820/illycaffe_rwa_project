@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #hd {
-  background: lightgray;
+  background: #fff;
   position: relative;
   z-index: 9999;
 }
@@ -14,7 +14,7 @@
   height: 0;
   width: 100%;
   transition: 0.5s;
-  background-color: lightgray;
+  background-color: #fff;
 }
 #hd .gnb:hover:before {
   height: 180px !important;
@@ -58,6 +58,9 @@
 #hd .iconMenu {
   width: 0;
 }
+#hd .iconMenu li svg path {
+  fill: #333;
+}
 #hd .iconMenu li svg:hover path {
   fill: #D9261C;
 }
@@ -65,7 +68,7 @@
   font-family: "Noto Sans KR";
   font-size: 0.875rem;
   font-weight: 700;
-  color: #fff;
+  color: #333;
 }
 #hd .iconMenu li span:hover {
   color: #D9261C;
@@ -77,7 +80,7 @@
 }
 #main .mainBanner .bgImg {
   position: relative;
-  width: 100%;
+  width: 100vw;
   max-width: 1920px;
   height: 100vh;
   max-height: 1000px;
@@ -135,54 +138,85 @@
   line-height: 100%; /* 16px */
 }
 
-#product .productBox {
+#product .productUl {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+#product .productUl .productBox .hoverBox {
+  position: relative;
+  overflow: hidden;
   width: 384px;
   height: 300px;
   background-color: #121013;
+  transition: background-color 0.3s ease-in-out;
 }
-#product .productBox .hoverBox {
-  display: flex;
-  flex-direction: column;
+#product .productUl .productBox .hoverBox:hover {
+  background-color: #D9261C;
+}
+#product .productUl .productBox .hoverBox:hover .titletext {
+  transform: translateX(60%);
+  z-index: 9999;
+}
+#product .productUl .productBox .hoverBox:hover .subtext {
+  transform: translateX(30%);
+  text-align: center;
+  font-weight: 700 !important;
+  z-index: 9999;
+}
+#product .productUl .productBox .hoverBox:hover .prdImg {
+  transform: translateX(-120%);
+  z-index: 999;
+}
+#product .productUl .productBox .hoverBox:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background: rgba(18, 16, 19, 0.5);
+  transition: background-color 0.3s ease-in-out;
+  z-index: 998;
+  pointer-events: none;
 }
-#product .productBox .hoverBox .textarea {
-  top: 99px;
-  left: 37px;
-  width: 193px;
-  position: relative;
+#product .productUl .productBox .hoverBox .textarea {
+  position: absolute;
+  margin-left: 37px;
+  margin-top: 100px;
+  z-index: 999;
 }
-#product .productBox .hoverBox .textarea .titletext {
+#product .productUl .productBox .hoverBox .textarea .titletext {
   font-family: "Noto Sans KR";
   font-weight: 700;
   color: #ffffff;
   font-size: 24px;
   letter-spacing: -1.2px;
   line-height: 24px;
+  transition: 0.3s ease-in-out;
 }
-#product .productBox .hoverBox .textarea .subtext {
+#product .productUl .productBox .hoverBox .textarea .subtext {
   font-family: "Noto Sans KR";
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
   letter-spacing: -0.96px;
   line-height: 22.6px;
+  transition: 0.3s ease-in-out;
 }
-#product .productBox .hoverBox .imgarea {
+#product .productUl .productBox .hoverBox .imgarea {
+  position: relative;
+  z-index: 9;
+}
+#product .productUl .productBox .hoverBox .imgarea .prdImg {
   position: absolute;
-  overflow: hidden;
-  bottom: -22%;
-  left: 282px;
-  width: 102px;
-  height: 225px;
-}
-#product .productBox .hoverBox .imgarea .coffeeimg {
+  background-image: url(../img/colombia.png);
+  transition: all 0.3s ease;
+  margin-top: 52px;
   width: 134px;
   height: 225px;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  left: 282px;
+  z-index: 999;
 }
 
 #ft {
