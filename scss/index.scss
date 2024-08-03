@@ -1,8 +1,10 @@
 #hd {
-    background: #fff;
+    // background: transparent;
     position: relative;
-    // position: fixed;
-    z-index: 9999;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    width: 100%;
     .gnb {
         &:before {
             content: "";
@@ -14,7 +16,7 @@
             height: 0;
             width: 100%;
             transition: 0.5s;
-            background-color: #fff;
+            background-color: rgb(255, 255, 255, 0.8);
         }
         &:hover {
             &:before {
@@ -25,8 +27,8 @@
             .gnb_d1_a { // 대메뉴 a
                 font-family: "Roboto Condensed";
                 font-size: 1.0625rem;
-                font-weight: 700;
-                color: #333333;
+                font-weight: 500;
+                color: #ffffff;
             }
             &:hover {    // .gnb_d1_li 에 마우스 올리면 ul 이 나타남
                 ul {     
@@ -48,6 +50,9 @@
                 padding: 0 1rem !important;
                 border: 0 !important;
                 line-height: 2rem;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
                 &:before,
                 &:after {    // 소메뉴 글자 위아래로 여백 주기
                     content: "";
@@ -72,35 +77,48 @@
         width: 0;
         li {
             svg {
-                path {
-                    fill: #333;
-                }
                 &:hover {
                     path {
                         fill: #D9261C;
                     }
                 }
             }
-            span {
+            p {
                 font-family: "Noto Sans KR";
                 font-size: 0.875rem;
-                font-weight: 700;
-                color: #333;
+                font-weight: 500;
+                color: #ffffff;
                 &:hover {
                     color: #D9261C;
                 }
             }
         }
     }
-    
+
+    // 스크롤 시의 스타일
+    &.scrolled {
+        background-color: rgb(255, 255, 255, 0.8); // 스크롤 시 배경색 변경
+        .gnb_d1_a,
+        .d2_ul a,
+        p {
+            color: #333 !important; // 스크롤 시 대메뉴 글씨 색상
+            &:hover {
+                color: #D9261C !important;
+            }
+        } 
+        svg path {
+            fill: #333 !important; // 스크롤 시 대메뉴 글씨 색상
+            &:hover {
+                fill: #D9261C !important;
+            }
+        }
+
+    }
 }
 
 #main {
-    width: 1920px;
-    max-width: 100%;
     .mainBanner {
         .bgImg {
-            position: relative;
             width: 100vw;
             max-width: 1920px;
             height: 100vh;
@@ -108,40 +126,49 @@
             margin: 0 auto;
             background-image: url("../img/mainImg.jpg");
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: center !important;
             background-size: cover;
+            &:after {
+                content: "";
+                background-image: url("../img/coffeeBeen.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                display: inline-block;
+                height: 66px;
+                width: 109px;
+                margin-top: 2%;
+                margin-left: 54%;
+            }
             .mainTextbox{
-                position: relative;
+                width: 521px;
+                margin-top: 461px;
+                margin-left: 696px;
+                text-align: center;
                 .mainText1{
-                    position: absolute;
-                    top: 485px;
-                    left: 882px;
                     color: #FFF;
-                    text-align: center;
                     font-family: "Roboto Condensed";
                     font-size: 38px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 135%;
                     letter-spacing: 5.7px;
+                    margin-bottom: 26px;
                 }
                 .mainText2{
-                    position: absolute;
-                    top: 664px;
-                    left: 709px;
                     color: #FFF;
-                    text-align: center;
                     font-family: "Noto Sans KR";
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 18px;
                     letter-spacing: -0.9px;
+                    margin-bottom: 0;
                 }
                 .btn {
-                    position: absolute;
-                    top: 756px;
-                    left: 882px;
+                    margin-top: 80px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
                     font-family: "Noto Sans KR";
                     font-size: 16px;
                     font-weight: 500;
@@ -150,11 +177,8 @@
                     border-radius: 30px;
                     width: 168px;
                     height: 50px;
-                    display: flex;  /* Flexbox 사용 */
-                    justify-content: center;    /* 수평 가운데 정렬 */
-                    align-items: center;    /* 수직 가운데 정렬 */
+                    text-align: center;
                     letter-spacing: -0.8px;
-                    line-height: 100%; /* 16px */
                 }      
             }
         }
@@ -163,9 +187,8 @@
 
 #product{
     .productUl {
-        margin: 0;
         padding: 0;
-        width: 100vw;;
+        width: 100vw;
         .productBox {
             .hoverBox {
                 position: relative;

@@ -52,10 +52,10 @@
         <div class="container-1824 d-flex justify-content-between align-items-center py-3">
             <h1 class="mb-0"><a href="/"><img src="./img/Logo.jpg" alt="로고"></a></h1>
 
-            <ul class="gnb ps-0 mb-0 d-flex ms-3">
+            <ul class="gnb ps-0 mb-0 d-flex justify-content-center align-items-center">
                 <li class="gnb_d1_li mx-4 position-relative">
                     <a href="" class="gnb_d1_a">BRAND</a>
-                    <ul class="d2_ul position-absolute p-3">
+                    <ul class="d2_ul position-absolute">
                         <li><a href="">BRAND</a></li>
                         <li><a href="">일리커피</a></li>
                         <li><a href="">뉴스 & 공지</a></li>
@@ -63,7 +63,7 @@
                 </li>
                 <li class="gnb_d1_li mx-4 position-relative">
                     <a href="" class="gnb_d1_a">ILLY CAFFE</a>
-                    <ul class="d2_ul position-absolute p-3">
+                    <ul class="d2_ul position-absolute">
                         <li><a href="">ILLY CAFFE</a></li>
                         <li><a href="">프랜차이즈</a></li>
                         <li><a href="">매장찾기</a></li>
@@ -71,28 +71,28 @@
                 </li>
                 <li class="gnb_d1_li mx-4 position-relative">
                     <a href="" class="gnb_d1_a">ILLY SHOP</a>
-                    <ul class="d2_ul position-absolute p-3">
+                    <ul class="d2_ul position-absolute">
                         <li><a href="">ILLY SHOP</a></li>
                         <li><a href="">매장찾기</a></li>
                     </ul>
                 </li>
                 <li class="gnb_d1_li mx-4 position-relative">
                     <a href="" class="gnb_d1_a">UDC</a>
-                    <ul class="d2_ul position-absolute p-3">
+                    <ul class="d2_ul position-absolute">
                         <li><a href="">UDC & 교육철학</a></li>
                         <li><a href="">교육내용</a></li>
                     </ul>
                 </li>
                 <li class="gnb_d1_li mx-4 position-relative">
                     <a href="" class="gnb_d1_a">BTB</a>
-                    <ul class="d2_ul position-absolute p-3">
+                    <ul class="d2_ul position-absolute">
                         <li><a href="">BTB 사업</a></li>
                         <li><a href="">공식대리점</a></li>
                     </ul>
                 </li>
                 <li class="gnb_d1_li mx-4 position-relative">
                     <a href="" class="gnb_d1_a">e-SHOP</a>
-                    <ul class="d2_ul position-absolute p-3">
+                    <ul class="d2_ul position-absolute">
                         <li><a href="">커피제품</a></li>
                         <li><a href="">캡슐머신</a></li>
                         <li><a href="">일리아트컬랙션</a></li>
@@ -100,9 +100,9 @@
                     </ul>
                 </li>
             </ul>
-            <!-- ul.iconMenu>li>span^li*2>i+span -->
-            <ul class="iconMenu ps-0 mb-0 d-flex justify-content-end">
-                <li><span class="text-nowrap">브랜드 제휴</span></li>
+            
+            <ul class="iconMenu ps-0 mb-0 d-flex justify-content-end align-items-center">
+                <li><p class="text-nowrap mb-0">브랜드 제휴</p></li>
                 <li class="ms-3">
                     <i><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.081 16.8088C20.366 15.0594 21.125 12.8996 21.125 10.5625C21.125 4.72899 16.396 0 10.5625 0C4.72899 0 0 4.72899 0 10.5625C0 16.396 4.72899 21.125 10.5625 21.125C12.9002 21.125 15.0605 20.3656 16.8102 19.08L16.8088 19.081C16.8567 19.146 16.9101 19.2082 16.969 19.267L23.226 25.5241C23.8606 26.1587 24.8895 26.1587 25.5241 25.5241C26.1587 24.8895 26.1587 23.8606 25.5241 23.226L19.267 16.969C19.2082 16.9101 19.146 16.8567 19.081 16.8088ZM19.5 10.5625C19.5 15.4985 15.4985 19.5 10.5625 19.5C5.62645 19.5 1.625 15.4985 1.625 10.5625C1.625 5.62645 5.62645 1.625 10.5625 1.625C15.4985 1.625 19.5 5.62645 19.5 10.5625Z" fill="white"/>
@@ -121,7 +121,7 @@
 
     <section id ="main">
         <div class="mainBanner container-1920 d-flex align-items-center">
-            <div class="bgImg"> <!-- <img src="./img/mainImg.jpg" alt="/"> -->
+            <div class="bgImg">
                 <div class="mainTextbox">
                     <p class="mainText1">
                         QUALITY <br />
@@ -140,7 +140,7 @@
     </section>
 
     <section id="product">
-        <ul class="productUl d-flex">
+        <ul class="productUl container-1920 d-flex">
             <li class="productBox">
                 <div class="hoverBox d-flex">
                     <div class="textarea">
@@ -286,4 +286,19 @@
         </div>
     </footer>
 </body>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const header = document.getElementById('hd');
+        
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    });
+
+</script>
 </html>
