@@ -188,7 +188,8 @@
 #product{
     .productUl {
         padding: 0;
-        width: 100vw;
+        width: 100%;
+       
         .productBox {
             .hoverBox {
                 position: relative;
@@ -196,15 +197,13 @@
                 width: 384px;
                 height: 300px;
                 background-color: #121013;
-                transition: background-color 0.3s ease-in-out;
                 &:hover {
                     background-color: #D9261C;
                     .titletext {
-                        transform: translateX(60%);
+                        text-align: center;
                         z-index: 9999;
                     }
                     .subtext {
-                        transform: translateX(30%);
                         text-align: center;
                         font-weight: 700 !important;
                         z-index: 9999;
@@ -228,8 +227,8 @@
                 }
                 .textarea {
                     position: absolute;
-                    margin-left: 37px;
-                    margin-top: 100px;
+                    width: 100%;
+                    padding: 100px 37px 0;             
                     z-index: 999;
                     .titletext {
                         font-family: "Noto Sans KR";
@@ -238,7 +237,6 @@
                         font-size: 24px;
                         letter-spacing: -1.2px;
                         line-height: 24px;
-                        transition: 0.3s ease-in-out;
                     }
                     .subtext {
                         font-family: "Noto Sans KR";
@@ -247,7 +245,7 @@
                         font-size: 16px;
                         letter-spacing: -0.96px;
                         line-height: 22.6px;
-                        transition: 0.3s ease-in-out;
+                        
                     }
                 }
                 .imgarea {
@@ -255,7 +253,6 @@
                     z-index: 9;
                     .prdImg {
                         position: absolute;
-                        background-image: url(../img/colombia.png);
                         transition: all 0.3s ease;
                         margin-top: 52px;
                         width: 134px;
@@ -270,6 +267,7 @@
 }
 
 #ft {
+    width: 100vw;
     background-color: #D9261C;
     position: relative;
     .container-1400 {
