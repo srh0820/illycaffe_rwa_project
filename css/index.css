@@ -234,6 +234,87 @@
   z-index: 999;
 }
 
+#contactForm .conForm {
+  height: 574px;
+  background-color: #F3EFE9;
+}
+#contactForm .conForm .formArea .textbox {
+  margin-left: 280px;
+  margin-top: 92px;
+}
+#contactForm .conForm .formArea .textbox h2 {
+  font-family: "Noto Sans KR";
+  font-size: 27px;
+  font-weight: 500;
+}
+#contactForm .conForm .formArea .textbox p {
+  color: #666;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 145%; /* 21.75px */
+  letter-spacing: -1.2px;
+}
+#contactForm .conForm .formArea .form {
+  margin-left: 280px;
+  margin-bottom: 92px;
+}
+#contactForm .conForm .formArea .form .form_group {
+  padding: 0;
+}
+#contactForm .conForm .formArea .form .form_group .input_field {
+  padding: 0;
+  margin-bottom: 2px;
+  width: 403px;
+  height: 43px;
+  border: 1px solid #E8E7E4;
+  color: #666;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 145%;
+  letter-spacing: -1.2px;
+}
+#contactForm .conForm .formArea .form .form_group .msg_field {
+  padding: 0;
+  margin-bottom: 2px;
+  width: 403px;
+  height: 165px;
+  border: 1px solid #E8E7E4;
+  color: #666;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 250%;
+  letter-spacing: -1.2px;
+}
+#contactForm .conForm .formArea .form .form_group .btn_field {
+  padding: 0;
+  width: 403px;
+  height: 43px;
+  border: 1px solid #E8E7E4;
+  background-color: #fff;
+  color: #333;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: -1.2px;
+  transition: 0.3s;
+}
+#contactForm .conForm .formArea .form .form_group .btn_field:hover {
+  background-color: #c2c2c2;
+  font-weight: 600;
+}
+#contactForm .conForm .imgArea {
+  background-image: url("/img/contact.jpg");
+  background-repeat: no-repeat;
+  background-position: center !important;
+  background-size: cover;
+  width: 50vw;
+  max-width: 960px;
+}
+
 #ft {
   width: 100vw;
   background-color: #D9261C;
