@@ -159,6 +159,9 @@
   letter-spacing: -0.8px;
 }
 
+#product {
+  margin-bottom: 200px;
+}
 #product .productUl {
   padding: 0;
   width: 100%;
@@ -232,6 +235,87 @@
   height: 225px;
   left: 282px;
   z-index: 999;
+}
+
+#story {
+  margin-bottom: 200px;
+}
+#story .inner {
+  height: 586px;
+  background: #F3EFE9;
+}
+#story .inner .textArea {
+  padding-top: 94px;
+  padding-left: 212px;
+}
+#story .inner .textArea h2 {
+  color: #333;
+  font-family: "Noto Sans KR";
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: -2.03px;
+}
+#story .inner .textArea p {
+  color: #666;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 145%;
+  letter-spacing: -1.2px;
+}
+#story .inner .textArea .btn {
+  margin-top: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #D9261C;
+  border-radius: 30px;
+  width: 160px;
+  height: 42px;
+  text-align: center;
+  letter-spacing: -0.8px;
+}
+#story .inner .value {
+  padding-top: 94px;
+  padding-left: 151px;
+}
+#story .inner .value .icon_wrapper {
+  width: 65px;
+  height: 65px;
+  background-color: #D9261C;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#story .inner .value .icon_wrapper img {
+  width: 45px;
+  height: 45px;
+}
+#story .inner .value .mission,
+#story .inner .value .Values {
+  padding-right: 100px;
+}
+#story .inner .value h3 {
+  color: #333;
+  font-family: "Noto Sans KR";
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 150%; /* 37.5px */
+  letter-spacing: -1.25px;
+}
+#story .inner .value p {
+  color: #333;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: -0.9px;
 }
 
 #contactForm .conForm {
