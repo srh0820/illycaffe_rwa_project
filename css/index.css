@@ -70,14 +70,14 @@
 #hd .iconMenu li svg:hover path {
   fill: #D9261C;
 }
-#hd .iconMenu li p {
+#hd .iconMenu li a {
   font-family: "Noto Sans KR";
   font-size: 0.875rem;
   font-weight: 500;
   color: #ffffff;
   letter-spacing: -0.85px;
 }
-#hd .iconMenu li p:hover {
+#hd .iconMenu li a:hover {
   color: #D9261C;
 }
 #hd.scrolled {
@@ -85,12 +85,12 @@
 }
 #hd.scrolled .gnb_d1_a,
 #hd.scrolled .d2_ul a,
-#hd.scrolled p {
+#hd.scrolled a {
   color: #333 !important;
 }
 #hd.scrolled .gnb_d1_a:hover,
 #hd.scrolled .d2_ul a:hover,
-#hd.scrolled p:hover {
+#hd.scrolled a:hover {
   color: #D9261C !important;
 }
 #hd.scrolled svg path {
@@ -565,9 +565,6 @@
 #ft .container-1400 {
   overflow-x: hidden;
   height: 520px;
-}
-#ft .container-1400 .gnb li {
-  border-bottom: 1px solid #c7c1c1;
 }
 #ft .container-1400 .gnb li a {
   font-family: "Noto Sans KR";
