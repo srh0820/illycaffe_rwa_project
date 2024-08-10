@@ -5,6 +5,9 @@
     z-index: 99999;
     top: 0;
     width: 100%;
+    .h1 {
+        width: 0;
+    }
     .gnb {
         &:before {
             content: "";
@@ -29,6 +32,7 @@
                 font-size: 1.0625rem;
                 font-weight: 500;
                 color: #ffffff;
+                
             }
             &:hover {    // .gnb_d1_li 에 마우스 올리면 ul 이 나타남
                 ul {     
@@ -50,9 +54,11 @@
                 padding: 0 1rem !important;
                 border: 0 !important;
                 line-height: 2rem;
+                letter-spacing: -0.85px;
                 left: 50%;
                 transform: translateX(-50%);
                 text-align: center;
+                font-size: 1.0625rem;
                 &:before,
                 &:after {    // 소메뉴 글자 위아래로 여백 주기
                     content: "";
@@ -74,7 +80,7 @@
         }
     }
     .iconMenu {
-        width: 0;
+        width: 64px;
         li {
             svg {
                 &:hover {
@@ -88,6 +94,7 @@
                 font-size: 0.875rem;
                 font-weight: 500;
                 color: #ffffff;
+                letter-spacing: -0.85px;
                 &:hover {
                     color: #D9261C;
                 }
@@ -119,7 +126,7 @@
 #main {
     .mainBanner {
         .bgImg {
-            width: 100vw;
+            width: 100%;
             max-width: 1920px;
             height: 100vh;
             max-height: 1000px;
@@ -187,10 +194,15 @@
 
 #product {
     margin-bottom: 200px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .productUl {
+        overflow: hidden;
         padding: 0;
         width: 100%;
-       
+        max-width: 1920px;
         .productBox {
             .hoverBox {
                 position: relative;
@@ -304,7 +316,7 @@
             right: 0;
             background-color: #D9261C; 
             height: 530px;
-            width: 100vw;
+            width: 100%;
             z-index: 1; 
             text-align: center;
             padding-top: 330px;
@@ -337,11 +349,46 @@
 
 #shop {
     margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
     .shopdiv {
+        overflow-x: hidden;
+        margin-left: 48px;
+        width: 100%;
+        max-width: 1920px;
+        .shoptext {
+            height: 226px;
+            h2 {
+                font-family: "Noto Sans KR";
+                font-size: 29px;
+                font-weight: 500;
+                line-height: 140%; /* 40.6px */
+                letter-spacing: -2.03px;
+            }
+            p {
+                font-family: "Noto Sans KR";
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 140%; /* 21px */
+                letter-spacing: -0.75px;
+            }
+            .btn {              
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Noto Sans KR";
+                font-size: 16px;
+                font-weight: 500;
+                color: #ffffff;
+                background-color: #D9261C;
+                border-radius: 30px;
+                width: 160px;
+                height: 42px;
+                text-align: center;
+                letter-spacing: -0.8px;              
+            }
+        }
         .swiper-container {
-            // position: relative;
-            overflow: hidden;
-            width: 100vw;
             .swiper-wrapper {
                 display: flex;
                 .swiper-slide {
@@ -368,7 +415,6 @@
         }
     }
 }
-
 
 #story {
     margin-bottom: 200px;
@@ -452,10 +498,19 @@
 }
 
 #contactForm {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .conForm {
+        display: flex;
         height: 574px;
         background-color: #F3EFE9;
+        width: 100%;
+        max-width: 1920px;
         .formArea {
+            margin-left: 0;
+            padding: 0;
             .textbox {
                 margin-left: 280px;
                 margin-top: 92px;
@@ -537,14 +592,13 @@
 }
 
 #ft {
-    width: 100vw;
     background-color: #D9261C;
-    position: relative;
-    .container-1400 {
+   .container-1400 {
+        overflow-x: hidden;
         height: 520px;
         .gnb {
             li { 
-                border-bottom: 1px soild #c7c1c1;
+                border-bottom: 1px solid #c7c1c1;
                 a {
                     font-family: "Noto Sans KR";
                     font-size: 17px;

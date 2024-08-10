@@ -5,6 +5,9 @@
   top: 0;
   width: 100%;
 }
+#hd .h1 {
+  width: 0;
+}
 #hd .gnb:before {
   content: "";
   align-items: center;
@@ -41,9 +44,11 @@
   padding: 0 1rem !important;
   border: 0 !important;
   line-height: 2rem;
+  letter-spacing: -0.85px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  font-size: 1.0625rem;
 }
 #hd .gnb .gnb_d1_li .d2_ul:before, #hd .gnb .gnb_d1_li .d2_ul:after {
   content: "";
@@ -60,7 +65,7 @@
   color: #D9261C;
 }
 #hd .iconMenu {
-  width: 0;
+  width: 64px;
 }
 #hd .iconMenu li svg:hover path {
   fill: #D9261C;
@@ -70,6 +75,7 @@
   font-size: 0.875rem;
   font-weight: 500;
   color: #ffffff;
+  letter-spacing: -0.85px;
 }
 #hd .iconMenu li p:hover {
   color: #D9261C;
@@ -95,7 +101,7 @@
 }
 
 #main .mainBanner .bgImg {
-  width: 100vw;
+  width: 100%;
   max-width: 1920px;
   height: 100vh;
   max-height: 1000px;
@@ -161,10 +167,16 @@
 
 #product {
   margin-bottom: 200px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #product .productUl {
+  overflow: hidden;
   padding: 0;
   width: 100%;
+  max-width: 1920px;
 }
 #product .productUl .productBox .hoverBox {
   position: relative;
@@ -276,7 +288,7 @@
   right: 0;
   background-color: #D9261C;
   height: 530px;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   text-align: center;
   padding-top: 330px;
@@ -306,10 +318,46 @@
 
 #shop {
   margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
 }
-#shop .shopdiv .swiper-container {
-  overflow: hidden;
-  width: 100vw;
+#shop .shopdiv {
+  overflow-x: hidden;
+  margin-left: 48px;
+  width: 100%;
+  max-width: 1920px;
+}
+#shop .shopdiv .shoptext {
+  height: 226px;
+}
+#shop .shopdiv .shoptext h2 {
+  font-family: "Noto Sans KR";
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 140%; /* 40.6px */
+  letter-spacing: -2.03px;
+}
+#shop .shopdiv .shoptext p {
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 140%; /* 21px */
+  letter-spacing: -0.75px;
+}
+#shop .shopdiv .shoptext .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #D9261C;
+  border-radius: 30px;
+  width: 160px;
+  height: 42px;
+  text-align: center;
+  letter-spacing: -0.8px;
 }
 #shop .shopdiv .swiper-container .swiper-wrapper {
   display: flex;
@@ -417,9 +465,22 @@
   letter-spacing: -0.9px;
 }
 
+#contactForm {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #contactForm .conForm {
+  display: flex;
   height: 574px;
   background-color: #F3EFE9;
+  width: 100%;
+  max-width: 1920px;
+}
+#contactForm .conForm .formArea {
+  margin-left: 0;
+  padding: 0;
 }
 #contactForm .conForm .formArea .textbox {
   margin-left: 280px;
@@ -499,15 +560,14 @@
 }
 
 #ft {
-  width: 100vw;
   background-color: #D9261C;
-  position: relative;
 }
 #ft .container-1400 {
+  overflow-x: hidden;
   height: 520px;
 }
 #ft .container-1400 .gnb li {
-  border-bottom: 1px soild #c7c1c1;
+  border-bottom: 1px solid #c7c1c1;
 }
 #ft .container-1400 .gnb li a {
   font-family: "Noto Sans KR";
