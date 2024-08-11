@@ -694,6 +694,27 @@
   max-width: 960px;
 }
 
+#quick {
+  position: fixed;
+  bottom: 10%;
+  right: 1%;
+  width: 45px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  z-index: 999;
+}
+#quick ul {
+  padding: 0;
+  margin: 0;
+}
+#quick ul li {
+  width: 100%;
+}
+#quick ul li span {
+  display: none;
+}
+
 #ft {
   background-color: #D9261C;
 }
@@ -718,4 +739,20 @@
   font-size: 15px;
   font-weight: 400;
   color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e09092;
+}
+
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
+  width: 10px;
 }
