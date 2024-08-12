@@ -8,10 +8,6 @@
 #hd h1 {
   width: 0;
 }
-#hd h1 img {
-  width: 64px;
-  height: 64px;
-}
 #hd .gnb:before {
   content: "";
   align-items: center;
